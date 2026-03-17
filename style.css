@@ -1,0 +1,108 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+color: white;
+text-align: center;
+transition: 0.5s;
+}
+
+.container {
+margin-top: 50px;
+}
+
+.search-box input {
+padding: 10px;
+width: 250px;
+border-radius: 8px;
+border: none;
+}
+
+.search-box button {
+padding: 10px;
+border-radius: 8px;
+border: none;
+cursor: pointer;
+}
+
+.weather-card {
+margin-top: 20px;
+padding: 20px;
+border-radius: 15px;
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+display: inline-block;
+}
+.search-box button {
+transition: 0.3s;
+}
+
+.search-box button:hover {
+background: black;
+color: white;
+}
+
+
+.forecast-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.forecast-card {
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+background: rgba(255,255,255,0.2);
+width: 100px;
+}
+
+#loader {
+display: none;
+margin-top: 10px;
+}
+
+/* Dynamic Backgrounds */
+.sunny {
+background: linear-gradient(to right, #fceabb, #f8b500);
+}
+
+.rainy {
+background: linear-gradient(to right, #4b79a1, #283e51);
+}
+
+.cloudy {
+background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+.night {
+background: linear-gradient(to right, #141e30, #243b55);
+}
+
+#history button {
+margin: 5px;
+padding: 5px 10px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+}
+@media (max-width: 600px) {
+.search-box input {
+width: 150px;
+}
+
+.forecast-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-card {
+    width: 80%;
+}
+
+.weather-card {
+    width: 90%;
+}
+
+
+}
